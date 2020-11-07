@@ -1,0 +1,216 @@
+1.
+let num = +prompt("namber:")
+if (num % 2 === 0) {
+    console.log (`${num} is even`);
+} else {
+    console.log (`${num} is odd`);
+}
+
+2.
+let num1 = +prompt("namber1:")
+let num2 = +prompt("namber2:")
+if (num1 % num2 === 0 || num2 % num1 === 0) {
+    console.log (`1`);
+} else {
+    console.log (`0`);}
+
+ 3.
+let ang1 = +prompt("angle1:");
+let ang2 = +prompt("angle2:");
+let ang3 = 180 - ang1 - ang2
+console.log (ang3);
+
+4.
+let number =+prompt('Enter an integer: ');
+if (number > 0) {
+    console.log(`${number}${number+number}${number+number+number}`);
+} else console.log ('a negative number')
+
+5.
+let num = +prompt ("Number")
+let a=Math.floor(num/100)
+let b=Math.floor(num/10%10)
+let c=Math.floor(num%10)
+ 
+console.log(c,b,a)
+6.
+let num1=+prompt("Number1:");
+let num2=+prompt("Number2:");
+let num3=+prompt("Number3:");
+let num4=+prompt("Number4:");
+let num5=+prompt("Number5:");
+ let average = (num1+num2+num3+num4+num5)/5;
+console.log(average);
+
+7.
+let num = +prompt("Number:")
+console.log((num%3===0 && num%5===0 && num%7===0) ? `${num} is a multiple of 3, 5 and 7` :
+(num%3===0 && num%5===0) ? `${num} is a multiple of 3, 5` :(num%5===0 && num%7===0) ? `${num} is a multiple of 5, 7` :
+(num%3===0 && num%7===0) ? `${num} is a multiple of 3, 7` :
+(num%3===0) ? `${num} is a multiple of 3` :
+`${num} is not a multiple of 3, 5 or 7`);
+
+8.
+let age1 = +prompt ("Age number:");
+let age2 = prompt ("Write month or year:");
+if (age1>0 && age1<=12)  {
+    if (age2 === "month")  {console.log ('baby!'); }
+} else if (age1>0 && age1<=2 ) {
+     if (age2==="year") {console.log('toddler');}
+
+} else if (age1 >=3 && age1<=12) {
+    if  (age2==="year" ){console.log('child'); }
+
+} else if  (age1 >=13 && age1<=17 ) {
+
+    if (age2==="year") {
+      console.log('teenager'); 
+    }
+} if  (age1 >=18 && age2==="year") 
+{ console.log('adult');}
+9.
+let x= +prompt ("Number1:");
+let y= +prompt ("Number2:");
+let z= +prompt ("Number3:");
+if (x>y && x>z)
+{
+        if (y>z)
+        {
+            console.log(z + ", " + y + ", " +x);
+        }
+        else
+        {
+            console.log(y + ", " + z + ", " +x);
+        }
+}
+else if (y>x && y >z)
+{
+        if (x>z)
+        {
+             console.log(z + ", " + x + ", " +y);
+        }
+        else
+        {
+             console.log(x + ", " + z + ", " +y);
+        }
+}
+else if (z>x && z>y)
+{
+        if (x>y)
+        {
+            console.log(y + ", " + x + ", " +z);
+        }
+        else
+        {
+            console.log(x + ", " + y + ", " +z);
+        }
+}        
+
+10.
+let a =+prompt('Exam1:');
+let b =+prompt('Exam2:');
+let c =+prompt('Exam3:');
+let average = (a+b+c)/3;
+if (a>0 && b>0 && c>0 && average>=50) 
+     console.log ("Passed");
+else console.log ('No passed');
+11.
+var x=+prompt('Number1');
+var y=+prompt('Number2');
+var z=+prompt('Number3');
+if (x>0 && y>0 && z>0)
+{
+       console.log ("+");
+}
+else if (x===0 || y===0 || z===0)
+        {
+          console.log("unsigned");
+        }
+        else if (x>0 && y<0 && z<0)
+        {
+          console.log("+");
+        }
+        else if (x<0 && y>0 && z<0)
+        {
+          console.log("+");
+        } 
+        else
+        {
+          console.log("-");
+
+        }
+12.
+console.log ('Enter valid constans')
+let des = Math.pow(b,2)-4*a*c
+let x1 = (-b+Math.sqrt(Math.pow(b,2)-4*a*c))/(2*a);
+let x2 = (-b-Math.sqrt(Math.pow(b,2)-4*a*c))/(2*a);
+if (des ===0)
+console.log (`Solutions are ${x1} `)
+else if (a!=0 && b!=0 && c!=0) 
+     console.log (`Solutions are ${x1} and ${x2}` );
+else console.log (`Solution does not exists` );
+
+13.
+var n= +prompt();
+var i = 0;
+var j = 0;
+
+if (n%2===0 && !Math.floor(n/10)) {
+  i+=1
+  }
+else if (n%3===0 && n%10===1)  {
+  j+=1
+  }
+
+  14.
+let str = prompt ("Number1:");
+let sym = prompt ("Number2:");
+let result = "No";
+ for (let i=0; i < str.length; i++) {
+  if(str[i]===sym) {
+    result = `yes`;
+    break;
+  }
+} console.log (result);
+
+15.
+
+
+17. 
+let a= prompt ("A rectangular or a triangle?");
+let b= +prompt ("Number1:");
+let c= +prompt ("Number1:");
+let area = 0
+if (a==='triangle' )
+{
+        if (b>0 && c>0)
+        { area = (b*c)/2
+            console.log('Square of the triangle is '+ area);
+        }
+        else
+        {
+            console.log('Please enter only positives');
+        }
+}
+else if (a==='rectangle')
+{
+        if (b>0 && c>0)
+        { area = (b*c)
+             console.log('Square of the rectangle is '+ area);
+        }
+        else
+        {
+             console.log('Please enter only positives');
+        }
+}
+18.
+const num =  +prompt("Number:");;
+const difference = (num, min = Infinity, max = -Infinity) => {
+   if(num){
+      const digit = num % 10;
+      return difference(Math.floor(num / 10), Math.min(digit, min),
+      Math.max(digit, max));
+   };
+   return max - min;
+};
+console.log(difference(num));
